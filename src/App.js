@@ -50,6 +50,7 @@ class App extends Component {
       entries: data.entries,
       joined: data.joined
     }})
+    this.setState({celebrity:""})
   }
 
   OnInputChange=(event)=>{
