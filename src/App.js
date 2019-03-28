@@ -87,6 +87,7 @@ class App extends Component {
 
   OnSubmit=()=>{
     this.setState({imageUrl:this.state.input});
+    this.setState({celebrity:''});
     fetch('https://blooming-hollows-81737.herokuapp.com/api',{
       method:'post',
       headers: {'Content-Type': 'application/json'},
